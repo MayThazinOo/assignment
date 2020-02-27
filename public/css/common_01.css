@@ -1,0 +1,707 @@
+﻿@charset "utf-8";
+
+/* reset */
+/* ------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, input,textarea, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; font-style:normal;
+	-o-box-sizing:border-box; -ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;
+	font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","HIragino Kaku Gothic Pro W3","HIragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS P Gothic",sans-serif;
+}
+body{line-height:1;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:''; content:none;}
+:focus{outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+a{color:#2da5dc; text-decoration:none;}
+a:visited{color:#2da5dc; text-decoration:none;}
+a:hover{color:#2da5dc;text-decoration:none;}
+
+/* common */
+/* ------------------------------------------- */
+.w10{width:10%;}
+.w12{width:12%;}
+.w15{width:15%;}
+.w17{width:17%;}
+.w18{width:18%;}
+.w20{width:20%;}
+.w25{width:25%;}
+.w30{width:30%;}
+.w35{width:35%;}
+.w40{width:40%;}
+.w45{width:45%;}
+.w50{width:50%;}
+.w55{width:55%;}
+.w60{width:60%;}
+.w65{width:65%;}
+.w70{width:70%;}
+.w75{width:75%;}
+.w80{width:80%;}
+.w85{width:85%;}
+.w90{width:90%;}
+.w95{width:95%;}
+
+/* wrap */
+/* ------------------------------------------- */
+#topPage.wrap{
+	background-image:url(../img/common/hd_bg.jpg);
+	background-position:0 0;
+	background-repeat:repeat-x;
+}
+#wrap{
+	background-image:url(../img/common/hd_bg_common.png);
+	background-position:0 0;
+	background-repeat:repeat-x;
+}
+.wrap{
+	background-image:url(../img/common/hd_bg_common.png);
+	background-position:0 0;
+	background-repeat:repeat-x;
+}
+
+/* header */
+/* ------------------------------------------- */
+#header {
+    margin: 0 auto;
+    padding-top: 3px;
+    text-align: left;
+    width: 960px;
+}
+#header #hd_group {
+    overflow: hidden;
+    padding-left: 5px;
+}
+* html #header #hd_group {
+}
+#header #hd_group ul {
+    float: left;
+    overflow: hidden;
+}
+#header #hd_group li {
+    float: left;
+    text-indent: -9999px;
+}
+#header #hd_group #hd_sca a {
+    background: rgba(0, 0, 0, 0) url(../img/common/hd_menu_sca.jpg) no-repeat scroll 51% 14px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    width: 185px;
+}
+#header #hd_group #hd_scom a {
+    background: #d70c19 url(../img/common/hd_menu_scom.gif) no-repeat scroll 50% 14px;
+    border-right: 1px solid #ddd;
+    width: 216px;
+}
+#header #hd_group li a{
+	display:block;
+	height:36px;
+}
+#header #hd_group #hd_searchbox{
+	float:right;
+	overflow:hidden;
+	padding-top:9px;
+}
+#header #hd_group #hd_searchbox #KWString{
+	display:block;
+	float:left;
+	width:112px;
+	height:1.4166em;
+	min-height:19px;
+	padding:0 3px;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	font-size:75%;
+	line-height:1.4166;
+}
+#header #hd_group #hd_searchbox #button-search{
+	display:block;
+	float:left;
+	width:51px;
+	height:19px;
+	border:0;
+	background:url(../img/common/hd_menu_btn_search.gif) no-repeat;
+}
+#header #hd_menu{
+	overflow:hidden;
+	_zoom:1;
+	padding:10px 0 0;
+	border-left: 1px solid #fff;
+	background:url(../img/common/hd_menu_bg.gif) 0 100% repeat-x;
+	width:960px;
+	margin:0;
+}
+#topPage #header #hd_menu{
+	overflow:hidden;
+	_zoom:1;
+	padding:10px 0 0;
+	background:url(../img/common/hd_menu_bg.gif) 0 100% repeat-x;
+	width:960px;
+	margin: 0;
+	border-left: none;
+}
+#header .logo a{
+	float:left;
+	width:364px;
+	height:47px;
+	background-image:url(../img/common/hd_logo_snx_jp.png);
+	background-position:-1px 0;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	_zoom:1;
+	text-indent:-9999px;
+}
+#topPage #header .logo a{
+	float:left;
+	width:364px;
+	height:47px;
+	background-image:url(../img/common/hd_logo_snx_jp.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	_zoom:1;
+	text-indent:-9999px;
+}
+#hd_menu ul{
+	float:right;
+	overflow:hidden;
+	padding-top:10px;
+	background-image:url(../img/common/hd_menu_bg_2.gif);
+	background-position:-281px 100%;
+	background-repeat:no-repeat;
+}
+#hd_menu li{
+	float:left;
+}
+#hd_menu li a{
+	display:block;
+	width:141px;
+	height:41px;
+	padding: 6px 0 0;
+	background:url(../img/common/hd_menu_bg_2.gif) 1px 100% no-repeat;
+	color:#666;
+	font-size:75%;
+	text-align: center;
+}
+#hd_menu li a:hover,
+#topPage #hd_menu .hd_top a,
+#service #hd_menu .hd_service a,
+.company #hd_menu .hd_company a,
+.contact #hd_menu .hd_contact a{
+	background-position:-141px 100%;
+	text-decoration:none;
+}
+
+/* footer */
+/* ------------------------------------------- */
+#footer {
+	margin: 0 auto;
+	background-color:#f5f5f5;
+}
+#footer a,
+#footer a:visited,
+#footer a:hover{
+	color:#666;
+	text-decoration:none;
+}
+#footer .pgtop{
+	/*height: 0.9375em;*/
+	padding: 10px 0;
+	background-color:#f5f5f5;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #ddd;
+	line-height: 0.9375em;
+}
+#footer .pgtop p{
+	width: 960px;
+	margin: 0 auto;
+	padding-right: 10px;
+	text-align: right;
+}
+#footer .pgtop a{
+	padding-left: 16px;
+	background: url(../img/common/icon_pagetop.gif) no-repeat;
+	font-size: 68.75%;
+}
+#footer .footsitemap{
+	background-color:#fff;
+}
+#footer .footsitemap-in{
+	margin:0 auto;
+	width:960px;
+	text-align:left;
+	overflow:hidden;
+	padding:20px 0 10px 0;
+}
+*html #footer .footsitemap-in{
+	zoom:1;
+}
+#footer .footsitemap-in .ft_col1,
+#footer .footsitemap-in .ft_col2,
+#footer .footsitemap-in .ft_col3,
+#footer .footsitemap-in .ft_col4{
+	float:left;
+}
+#footer .footsitemap-in .ft_col1{
+	width:360px;
+}
+#footer .footsitemap-in .ft_col2{
+	width:360px;
+}
+#footer .footsitemap-in .ft_col3{
+	width:240px;
+}
+#footer .footsitemap-in h4{
+	font-size:68.75%;
+	font-weight:bold;
+	line-height:1;
+	padding:5px 0;
+}
+#footer .footsitemap-in ul{
+	padding:0 0 10px 0;
+	overflow:hidden;
+}
+* html #footer .footsitemap-in ul{
+	zoom:1;
+}
+#footer .footsitemap-in ul li{
+	font-size:68.75%;
+	line-height:1;
+	padding:5px 0;
+}
+#footer .footmenu{
+	padding: 12px 0 10px 0;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #ddd;
+	background-color:#eee;
+}
+#footer .footmenu .footmenu_in{
+	width:960px;
+	margin:0 auto;
+}
+#footer .footmenu .footmenu_in ul{
+	text-align:right;
+	font-size:68.75%;
+	line-height:1.25;
+}
+#footer .footmenu .footmenu_in ul li{
+	display:inline;
+	height:11px;
+	border-right:1px solid #ccc;
+	padding:0 8px;
+}
+#footer .footmenu .footmenu_in ul li.last{
+	padding:0 3px 0 8px;
+	border-right:none;
+}
+#footer .ft_guide{
+	width: 960px;
+	margin: 0 auto;
+	padding:10px 0;
+}
+#footer .ft_guide .ft_guide_in{
+	text-align:right;
+}
+#footer .ft_guide .ft_guide_in ul{
+	padding:5px 0;
+	font-size:68.75%;
+	line-height:1.25;
+}
+#footer .ft_guide .ft_guide_in ul li{
+	display:inline;
+	border-right:1px solid #ccc;
+	padding:0 8px;
+}
+#footer .ft_guide .ft_guide_in ul li.last{
+	padding:0 3px 0 8px;
+	border-right:none;
+}
+#footer .ft_guide .ft_guide_in p.copy{
+	font-size:75%;
+	line-height:1;
+	padding:5px 3px 5px 0;
+}
+
+/* content */
+/* ------------------------------------------- */
+#topPage .content{
+	padding:0;
+}
+.content{
+	width:960px;
+	margin:0 auto;
+	padding:0;
+	overflow:hidden;
+	_zoom:1;
+}
+.guide .content,
+.company .content,
+.service .content{
+    background-image:url(../img/common/contents_bg.gif);
+	background-repeat:repeat-y;
+	background-position:0 0;
+}
+
+/* breadcrumbs */
+ul.breadcrumbs{
+	width:960px;
+	font-size:81.25%;
+	margin:0 auto;
+	padding:20px 0 20px 3px;
+	overflow:hidden;
+	_zoom:1;
+}
+ul.breadcrumbs li{
+	display:block;
+	float:left;
+	color:#333;
+}
+ul.breadcrumbs li:after{
+	content:'>';
+	margin:0 8px;
+}
+ul.breadcrumbs li:last-child:after{
+	content:'';
+}
+ul.breadcrumbs li a{
+	color:#333;
+
+}
+
+/* main */
+/* ------------------------------------------- */
+.main {
+	float:left;
+	width:670px;
+	min-height:650px;
+	_height:650px;
+}
+.main .mainbox{
+	padding-bottom:10px;
+}
+.main .h1ttl h1{
+	background-image:url(../img/common/lineDot3px_01.png);
+    background-position:0 bottom;
+    background-repeat:repeat-x;
+	font-size:150%;
+	font-weight:normal;
+	margin:0 0 18px;
+	padding:7px 0 18px 3px;
+}
+.main .h1ttl h1 span{
+	font-size:21px;
+}
+.main h2{
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom:15px;
+    padding:6px 0 0 6px;
+}
+.main h2 span{
+	border-left:4px solid #d70c19;
+    display: block;
+    height: 30px;
+    padding:6px 0 0 13px;
+}
+.main h3{
+	border-bottom:1px solid #e5e5e5;
+    font-size:18px;
+	font-weight:normal;
+	margin:0 0 10px 0;
+	padding:10px 5px;
+}
+.main .inbox{
+	padding:0 5px 1.5em;
+}
+.main p{
+	color:#333;
+	font-size:87.5%;
+	line-height:1.5714;
+	margin:0 0 1em;
+}
+.main p:last-child{
+	margin:0;
+}
+
+/* sub */
+/* ------------------------------------------- */
+.sub{
+	float:right;
+	width:260px;
+	background-color:#f5f5f5;
+}
+.sub .h3ttl{
+	overflow:hidden;
+	padding:11px 15px 10px 15px;
+	border-bottom:1px solid #ddd;
+	border-top:2px solid #ccc;
+	background-color:#f5f5f5;
+	border-top:1px solid #cccccc;
+	_zoom:1;
+}
+.sub .h3ttl h3{
+	float:left;
+	min-height:24px;
+	font-size:112.5%;
+	line-height:1.3333em;
+	font-weight:bold;
+	_height:24px;
+}
+.sub .h3ttl em{
+	float:right;
+	font-size:81.25%;
+	line-height:1.8461;
+}
+.sub .submenu{
+	margin-bottom:10px;
+}
+.submenu li{
+	display:block;
+	background-color:#f5f5f5;
+	border-bottom:1px solid #fff;
+}
+.submenu li.end{
+	border:0;
+}
+.submenu li p{
+	padding:5px 8px;
+	border-bottom:1px solid #ddd;
+}
+.submenu li p.end{
+	border-bottom:1px solid #ccc;
+}
+.submenu li a{
+	display:block;
+	height:2.3076em;
+	padding-left:10px;
+	font-size:81.25%;
+	line-height:2.3076em;
+	color:#4c4c4c;
+	border-left:9px solid #bbb;
+	_height:18px;
+}
+
+/*sub news hover*/
+.news_index .submenu li.sm_company_news a,
+.news_article .submenu li.sm_company_news a,
+
+/*sub company hover*/
+.company_index .submenu li.sm_company_index a,
+.company_advantage .submenu li.sm_company_advantage a,
+.company_map .submenu li.sm_company_map a,
+
+/*sub service hover*/
+.service_index .submenu li.sm_service_index a,
+.service_faq .submenu li.sm_service_faq a,
+.service_example .submenu li.sm_service_example a,
+
+/*sub callcenter hover*/
+.callcenter_index .submenu li.sm_callcenter_index a,
+.callcenter_example .submenu li.sm_callcenter_example a,
+
+/*sub campaign hover*/
+.campaign_index .submenu li.sm_campaign_index a,
+.campaign_example .submenu li.sm_campaign_example a,
+
+/*sub catalog hover*/
+.catalog_index .submenu li.sm_catalog_index a,
+.catalog_example .submenu li.sm_catalog_example a,
+
+/*sub mchange hover*/
+.mchange_index .submenu li.sm_mchange_index a,
+.mchange_example .submenu li.sm_mchange_example a,
+
+/*sub morder hover*/
+.morder_index .submenu li.sm_morder_index a,
+.morder_example .submenu li.sm_morder_example a,
+
+/*sub point hover*/
+.point_index .submenu li.sm_point_index a,
+.point_example .submenu li.sm_point_example a,
+
+/*sub order hover*/
+.order_index .submenu li.sm_order_index a,
+.order_service .submenu li.sm_order_service a,
+.order_example .submenu li.sm_order_example a,
+
+/*sub enqdial hover*/
+.enqdial_index .submenu li.sm_enqdial_index a,
+
+/*sub fax hover*/
+.fax_index .submenu li.sm_fax_index a,
+
+/*sub megafax hover*/
+.megafax_index .submenu li.sm_megafax_index a,
+
+/*sub mps hover*/
+.mps_index .submenu li.sm_mps_index a,
+
+/*sub enqdial hover*/
+.enqdial_index .submenu li.sm_enqdial_index a,
+
+/*sub i-search hover*/
+.i-search_index .submenu li.sm_i_search_index a,
+.i-search_features .submenu li.sm_i_search_features a,
+.i-search_manage .submenu li.sm_i_search_manage a,
+.i-search_option .submenu li.sm_i_search_option a,
+.i-search_spec .submenu li.sm_i_search_spec a,
+.i-search_faq .submenu li.sm_i_search_faq a,
+.i-search_example .submenu li.sm_i_search_example a,
+.i-search_contact .submenu li.sm_i_search_contact a,
+
+/*sub i-ask hover*/
+.i-ask_index .submenu li.sm_i_ask_index a,
+.i-ask_open .submenu li.sm_i_ask_open a,
+.i-ask_manage .submenu li.sm_i_ask_manage a,
+.i-ask_option .submenu li.sm_i_ask_option a,
+.i-ask_spec .submenu li.sm_i_ask_spec a,
+.i-ask_faq .submenu li.sm_i_ask_faq a,
+.i-ask_example .submenu li.sm_i_ask_example a,
+.i-ask_contact .submenu li.sm_i_ask_contact a,
+
+/*sub i-catalog hover*/
+.i-catalog_index .submenu li.sm_i_catalog_index a,
+.i-catalog_manage .submenu li.sm_i_catalog_manage a,
+.i-catalog_spec .submenu li.sm_i_catalog_spec a,
+.i-catalog_faq .submenu li.sm_i_catalog_faq a,
+.i-catalog_example .submenu li.sm_i_catalog_example a,
+.i-catalog_contact .submenu li.sm_i_catalog_contact a,
+
+/*sub i-entry hover*/
+.i-entry_index .submenu li.sm_i_entry_index a,
+.i-entry_features .submenu li.sm_i_entry_features a,
+.i-entry_function .submenu li.sm_i_entry_function a,
+.i-entry_flow .submenu li.sm_i_entry_flow a,
+.i-entry_spec .submenu li.sm_i_entry_spec a,
+.i-entry_faq .submenu li.sm_i_entry_faq a,
+.i-entry_example .submenu li.sm_i_entry_example a,
+.i-entry_contact .submenu li.sm_i_entry_contact a,
+
+/*sub i-linkcheck hover*/
+.i-linkcheck_index .submenu li.sm_i_linkcheck_index a,
+.i-linkcheck_manage .submenu li.sm_i_linkcheck_manage a,
+.i-linkcheck_option .submenu li.sm_i_linkcheck_option a,
+.i-linkcheck_spec .submenu li.sm_i_linkcheck_spec a,
+.i-linkcheck_faq .submenu li.sm_i_linkcheck_faq a,
+.i-linkcheck_example .submenu li.sm_i_linkcheck_example a,
+.i-linkcheck_contact .submenu li.sm_i_linkcheck_contact a,
+
+/*sub i-print hover*/
+.i-print_index .submenu li.sm_i_print_index a,
+.i-print_manage .submenu li.sm_i_print_manage a,
+.i-print_faq .submenu li.sm_i_print_faq a,
+.i-print_example .submenu li.sm_i_print_example a,
+.i-print_contact .submenu li.sm_i_print_contact a,
+
+/*sub i-flow hover*/
+.i-flow_index .submenu li.sm_i_flow_index a,
+.i-flow_spec .submenu li.sm_i_flow_spec a,
+.i-flow_price .submenu li.sm_i_flow_price a,
+.i-flow_contact .submenu li.sm_i_flow_contact a,
+
+/*sub i-point hover*/
+.i-point_index .submenu li.sm_i_point_index a,
+.i-point_spec .submenu li.sm_i_point_spec a,
+.i-point_price .submenu li.sm_i_point_price a,
+.i-point_contact .submenu li.sm_i_point_contact a,
+
+/*sub i-shopnavi hover*/
+.i-shopnavi_index .submenu li.sm_i_shopnavi_index a,
+.i-shopnavi_spec .submenu li.sm_i_shopnavi_spec a,
+.i-shopnavi_price .submenu li.sm_i_shopnavi_price a,
+.i-shopnavi_contact .submenu li.sm_i_shopnavi_contact a,
+
+/*sub i-spothelper hover*/
+.i-spothelper_index .submenu li.sm_i_spothelper_index a,
+.i-spothelper_spec .submenu li.sm_i_spothelper_spec a,
+.i-spothelper_price .submenu li.sm_i_spothelper_price a,
+.i-spothelper_contact .submenu li.sm_i_spothelper_contact a,
+
+/*sub dbecs hover*/
+.dbecs_index .submenu li.sm_dbecs_index a,
+.dbecs_features .submenu li.sm_dbecs_features a,
+.dbecs_case_index .submenu li.sm_dbecs_case a,
+.dbecs_case .submenu li.sm_dbecs_case a,
+.dbecs_example .submenu li.sm_dbecs_example a,
+
+/*sub brain hover*/
+.brain_index .submenu li.sm_brain_index a,
+.brain_features .submenu li.sm_brain_features a,
+.brain_price .submenu li.sm_brain_price a,
+.brain_customize .submenu li.sm_brain_customize a,
+.brain_contact .submenu li.sm_brain_contact a,
+.brain_theme .submenu li.sm_brain_theme a,
+.brain_source .submenu li.sm_brain_source a,
+.brain_faq .submenu li.sm_brain_faq a,
+.brain_schedule .submenu li.sm_brain_schedule a,
+.brain_pdf .submenu li.sm_brain_pdf a,
+
+/*sub webtopnews hover*/
+.webtopnews_index .submenu li.sm_webtopnews_index a,
+.webtopnews_contact .submenu li.sm_webtopnews_contact a,
+
+/*sub linkplus hover*/
+.linkplus_index .submenu li.sm_linkplus_index a,
+.linkplus_features .submenu li.sm_linkplus_features a,
+.linkplus_price .submenu li.sm_linkplus_price a,
+.linkplus_contact .submenu li.sm_linkplus_contact a,
+
+/*sub pediaplus hover*/
+.pediaplus_index .submenu li.sm_pediaplus_index a,
+.pediaplus_features .submenu li.sm_pediaplus_features a,
+.pediaplus_price .submenu li.sm_pediaplus_price a,
+.pediaplus_contact .submenu li.sm_pediaplus_contact a,
+
+/*sub sitewatch hover*/
+.sitewatch_index .submenu li.sm_sitewatch_index a,
+.sitewatch_price .submenu li.sm_sitewatch_price a,
+.sitewatch_contact .submenu li.sm_sitewatch_contact a,
+
+/*sub fresheye hover*/
+.fresheye_index .submenu li.sm_fresheye_index a,
+.fresheye_mobile .submenu li.sm_fresheye_index a,
+.fresheye_contact .submenu li.sm_fresheye_contact a,
+
+/*sub guide hover*/
+.guide_index .submenu li.sm_guide_index a,
+.guide_privacy .submenu li.sm_guide_privacy a,
+.guide_security .submenu li.sm_guide_security a,
+.guide_sitemap .submenu li.sm_guide_sitemap a,
+
+/*sub verisign hover*/
+.veri_schedule .submenu li.sm_verisign a{
+	border-left:9px solid #d70c19;
+}
+.submenu li a span{
+	display:block;
+	font-size:91.6666%;
+	line-height:1.1818em;
+	font-weight:normal;
+}
+.submenu li a:hover{
+	background-position:-257px 50%;
+	text-decoration:none;
+	color:#4c4c4c;
+	border-left:9px solid #d70c19;
+}
+.submenu li a:visited{
+	color:#4c4c4c;
+}
+.sub_imgbox{
+	padding:20px 28px 0;
+	text-align:center;
+}
+.sub_imgbox img{
+	margin-bottom:20px;
+}
+.sub_imgbox p{
+	font-size:75%;
+	line-height:1.5;
+	text-align:left;
+}

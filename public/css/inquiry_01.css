@@ -1,0 +1,323 @@
+﻿@charset "utf-8";
+
+/*--------------------------------------------------------------------*/
+/* overwrite */
+/*--------------------------------------------------------------------*/
+#wrap{
+	background: url(../img/inquiry/hd_bg.png) repeat-x;
+}
+.main{
+	float: none;
+	width: auto;
+}
+#header #hd_menu{
+	border: 0;
+}
+
+/*--------------------------------------------------------------------*/
+/* common */
+/*--------------------------------------------------------------------*/
+/* title */
+.inquiry .main h2{
+	display: block;
+	height: 30px;
+	padding: 6px 0 0 13px;
+	border-left: 4px solid #d70c19;
+}
+
+/* box */
+.inquiry .content{
+	padding-top: 22px;
+}
+.inquiry .mainbox {
+	color: #333;
+	padding: 0 15px 20px;
+}
+
+/* list */
+.inquiry .form_list ul{
+	padding-left: 10px;
+}
+.inquiry .form_list li{
+	margin-bottom: 5px;
+	font-size: 87.5%;
+	line-height: 1.4285;
+	padding-left: 12px;
+	background: url(../img/inquiry/icon_dot_gray.png) 0 7px no-repeat;
+}
+.inquiry .form_list li:last-child{
+	margin-bottom: 0;
+}
+
+/* btns */
+.inquiry .mainbox .btn_area{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.inquiry .mainbox .btn{
+	display: inline-block;
+	width: 200px;
+	margin: 0 10px;
+	padding: 8px 0;
+	text-align: center;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	font-weight: bold;
+	transition: all 0.5s ease;
+}
+.inquiry .mainbox .btn:hover{
+	cursor: pointer;
+}
+.inquiry .mainbox .btn_entry,
+.inquiry .mainbox .btn_confirm{
+	background-color:#d8152a;
+	border:1px solid #d8152a;
+	color: #fff;
+}
+.inquiry .mainbox .btn_entry:hover,
+.inquiry .mainbox .btn_confirm:hover{
+	border:1px solid #a6111f;
+	background-color:#a6111f;
+}
+.inquiry .mainbox .btn_back{
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	color: #333;
+}
+.inquiry .mainbox .btn_back:hover{
+	background-color: #eee;
+	border: 1px solid #ddd;
+	color: #333;
+}
+
+/* table */
+.inquiry .table_area{
+	padding-bottom: 40px
+}
+.inquiry .table_area table{
+	width: 100%;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-collapse: separate;
+}
+.inquiry .table_area th,
+.inquiry .table_area td{
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	font-size: 87.5%;
+	line-height: 1.4285;
+}
+.inquiry .table_area th{
+	position: relative;
+	width: 250px;
+	padding: 15px 40px 15px 15px;
+	background-color: #f5f5f5;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+.inquiry .table_area .reqrired th:after,
+.inquiry .table_area .optional th:after{
+	position: absolute;
+	top:15px;
+	right:10px;
+	border-radius: 3px;
+	font-size: 11px;
+	padding: 2px 4px;
+}
+.inquiry .table_area .reqrired th:after{
+	content: '必須';
+	background-color: #c00;
+	border: 1px solid #c00;
+	color: #fff;
+}
+.inquiry .table_area .optional th:after{
+	content: '任意';
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #666;
+}
+.inquiry .table_area td{
+	padding: 15px 20px;
+	vertical-align: middle;
+}
+.inquiry .table_area td select{
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #d9d9d9;
+	color:#333;
+	font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","HIragino Kaku Gothic Pro W3","HIragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS P Gothic",sans-serif;
+}
+.inquiry .table_area td select option{
+	margin: 10px 0;
+}
+.inquiry .table_area td input,
+.inquiry .table_area td textarea{
+	display: block;
+	border-radius: 4px;
+	border: 1px solid #d9d9d9;
+	padding: 8px 10px;
+}
+.inquiry .table_area td input{
+	width: 100%;
+}
+.inquiry .table_area td textarea{
+	width: 100%;
+	height: 7em;
+}
+.inquiry .table_area td input:focus,
+.inquiry .table_area td select:focus,
+.inquiry .table_area td textarea:focus{
+	outline: none;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.075);
+	transition: all 0.5s ease;
+}
+.inquiry .table_area td ::-webkit-input-placeholder{
+	color: #8c8c8c;
+}
+.inquiry .table_area td ::-moz-placeholder{
+	color: #666;
+}
+.inquiry .table_area td :-moz-placeholder{
+	color: #666;
+}
+.inquiry .table_area td :-ms-input-placeholder{
+	color: #8c8c8c;
+}
+
+/* disp error */
+.inquiry #box_message{
+	position: relative;
+	margin-bottom: 30px;
+	padding: 10px 15px 10px 75px;
+	background-color: #cc2929;
+	border: 3px solid #cc2929;
+	border-radius: 4px;
+}
+.inquiry #box_message:before{
+	content: '!';
+	display: block;
+	position: absolute;
+	left:15px;
+	width: 44px;
+	height: 44px;
+	color:#cc2929;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #fff;
+	border-radius: 44px;
+	text-align: center;
+	line-height: 47px;
+}
+.inquiry #box_message p {
+	font-size: 15px;
+	color: #fff;
+}
+.inquiry .mainbox .error_mes{
+	position: relative;
+	height: 20px;
+	margin-top:5px;
+	margin-bottom: 0 !important;
+	padding-left: 28px;
+	color:#c00;
+	font-size: 87.5%;
+	line-height: 20px;
+}
+.inquiry .mainbox .error_mes:before{
+	content: '!';
+	display: block;
+	position: absolute;
+	left:5px;
+	width: 18px;
+	height: 18px;
+	color:#fff;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #cc2929;
+	border-radius: 18px;
+	text-align: center;
+	line-height: 18px;
+}
+.inquiry .mainbox .error_mes:first-of-type{
+	margin-top: 10px;
+}
+.inquiry .mainbox .doui_area .error_mes{
+	display: inline-block;
+	margin-top: 10px;
+	line-height:1.25;
+}
+.inquiry .table_area .error input,
+.inquiry .table_area .error select,
+.inquiry .table_area .error textarea,
+.inquiry .table_area .error input:focus,
+.inquiry .table_area .error select:focus,
+.inquiry .table_area .error textarea:focus{
+	border: 1px solid #c00;
+}
+
+
+/* index.html, error.html, confirm.html
+-----------------------------------*/
+.inquiry #form_caution{
+	padding-bottom: 30px;
+}
+.inquiry #form_caution p{
+	font-size: 87.5%;
+}
+.inquiry #form_caution .form_list{
+	padding: 15px 10px;
+	border: 3px solid #eee;
+	background-color: #fff;
+}
+.inquiry #form_notice{
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.inquiry .form_notice_area{
+	border-top: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+.inquiry .form_notice_area .form_list ul{
+	padding: 15px;
+}
+.inquiry .mainbox .to_inquiry{
+	margin: 0 15px;
+	padding: 15px 15px 0;
+	border-top: 1px solid #ddd;
+}
+.inquiry .mainbox .doui_area{
+	background-color: #f5f5f5;
+	padding: 20px 10px;
+	text-align: center;
+}
+.inquiry .mainbox .privacy_check{
+	font-size: 87.5%;
+	font-weight: bold;
+	text-align: center;
+}
+.inquiry .mainbox .privacy_check input{
+	position: relative;
+	top:2px;
+	margin-right: 5px;
+}
+
+
+/* finish
+-----------------------------------*/
+.inquiry .finish .outline_box h3 {
+	font-size: 20px;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+	border-bottom: 0;
+}
+
+.inquiry .finish .outline_box p {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	font-size: 87.5%;
+	line-height: 1.6153;
+}
