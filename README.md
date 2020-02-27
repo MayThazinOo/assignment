@@ -3,7 +3,7 @@
 ## run these commands
 
 1. composer install
-2. php arisan key:generate
+2. php artisan key:generate
 
 ## copy .env.example to .env and set up database setting
 
